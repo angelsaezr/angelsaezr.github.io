@@ -13,7 +13,14 @@
 
 <body>
     <header>
-        <div>Ángel Sáez</div>
+
+        <h1 style="padding: 80px;">Ángel Sáez</h1>
+
+        <ul class="index">
+            <li><a href="#Home">Home</li></a>
+            <li><a href="#About">About</li></a>
+            <li><a href="#Contact">Contact</li></a>
+        </ul>
 
         <div class="social-icons">
             <a href="https://github.com/angelsaezr" target="_blank" rel="noreferrer"><img src="images/github.ico"
@@ -23,11 +30,36 @@
         </div>
     </header>
     <main>
-        <div style="height: 2000px; padding: 20px;">
-            <h1>Contenido de la Página</h1>
-            <p>Este es un ejemplo de contenido largo en la página para demostrar el efecto de desplazamiento.</p>
+        <div>
+            <h1>Computer Engineering Student.</h1>
         </div>
-    
+
+        <section id="Home">
+            <h1>Home</h1>
+        </section>
+
+        <section id="About">
+            <h1>About</h1>
+        </section>
+
+        <section id="Contact">
+            <h1>Contact</h1>
+            <form method="post" action="https://formsubmit.co/angel.saez.2002@gmail.com" target="_blank" >
+
+                <label>Name:
+                    <input type="text" name="name" required placeholder="Enter your name">
+                </label>
+                <label>Email:
+                    <input type="email" name="email" required placeholder="Enter your email address">
+                </label>
+                <label>Message:
+                    <input type="text" name="message" required placeholder="Hi, I think you might be interested in our company's project, how about we talk for a while?">
+                </label>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+
+
     </main>
 </body>
 

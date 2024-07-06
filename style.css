@@ -1,16 +1,17 @@
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #ffffff;
 }
 
-header {
-    text-align:left;
+main {
+    padding: 100px;
 }
 
 .social-icons {
     position: fixed;
     bottom: 10px;
     display: block;
+    padding: 10px;
 }
 
 .social-icons a {
@@ -18,3 +19,10 @@ header {
     margin: 5px 0;
 }
 
+.index {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    padding: 10px;
+    list-style-type: none;
+}
