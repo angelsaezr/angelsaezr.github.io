@@ -1,69 +1,20 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0D1117;
-    color: #C9D1D9;
-    margin: 0;
-    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
 }
 
 header {
-    background-color: #161B22;
-    padding: 10px 20px;
-    text-align: center;
+    text-align:left;
 }
 
-header .logo {
-    font-size: 24px;
-    color: #58A6FF;
+.social-icons {
+    position: fixed;
+    bottom: 10px;
+    display: block;
 }
 
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #161B22;
-    border-radius: 8px;
-}
-
-.profile {
-    text-align: center;
-}
-
-.social-icons img {
-    width: 24px;
-    margin: 0 5px;
-}
-
-.experience {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-
-.caja {
-    border: 1px solid #BB86FC;
-    padding: 10px;
-    border-radius: 8px;
-    margin: 20px 0;
-}
-
-.bio {
-    margin: 20px 0;
-}
-
-.community {
-    margin: 40px 0;
-}
-
-.community-links .link {
-    background-color: #21262D;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 10px 0;
-}
-
-.community-links .link h3 {
-    margin: 0;
-    color: #58A6FF;
+.social-icons a {
+    display: block;
+    margin: 5px 0;
 }
 
