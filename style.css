@@ -1,9 +1,3 @@
-html {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-
-}
-
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #ffffff;
@@ -15,7 +9,8 @@ header {
 
 main {
     padding: 100px;
-    background-color: blue;
+    background-color: rgb(131, 131, 173);
+    max-width: 400%;
 }
 
 .social-icons {
@@ -39,13 +34,5 @@ main {
 }
 
 section {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    transition: top 0.5s;
+    height: 800px;
 }
