@@ -12,8 +12,8 @@ html, body {
 
 header {
     width: 50%;
-    padding: 8%;
-    background-color: #191733;
+    padding: 10%;
+    background-color: #376b15;
     color: white;
     height: 100%;
     position: fixed;
@@ -21,7 +21,6 @@ header {
     left: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 header a {
     color: white;
@@ -29,16 +28,21 @@ header a {
     margin: 15px 0;
     padding: 10px 20px;
     text-align: center;
+    display: block;
 }
 header a:hover {
     background-color: #575757;
 }
 
 main {
-    background-color: #191733;
+    background-color: #09062e;
     margin-left: 50%;
-    padding: 8%;
+    padding: 10%;
     color: white;
+}
+
+h2, h3 {
+    margin-top: 5%;
 }
 
 .social-icons {
@@ -56,4 +60,24 @@ main {
 
 section {
     height: 800px;
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 5%;
+    }
+
+    header a {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        margin: 5px 0;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 5%;
+    }
 }
