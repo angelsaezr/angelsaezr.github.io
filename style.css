@@ -1,23 +1,52 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #ffffff;
+    background-color: #fd0000;
+    font-size: 14px;
 }
 
 header {
-    background-color: aquamarine;
+    width: 50%;
+    padding: 8%;
+    background-color: #191733;
+    color: white;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 10px 20px;
+    text-align: center;
+}
+header a:hover {
+    background-color: #575757;
 }
 
 main {
-    padding: 100px;
-    background-color: rgb(131, 131, 173);
-    max-width: 400%;
+    background-color: #191733;
+    margin-left: 50%;
+    padding: 8%;
+    color: white;
 }
 
 .social-icons {
-    position: fixed;
+    position: center;
     bottom: 10px;
     display: block;
     padding: 10px;
+    background-color: blue;
 }
 
 .social-icons a {
@@ -25,14 +54,10 @@ main {
     margin: 5px 0;
 }
 
-.index {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    padding: 10px;
-    list-style-type: none;
-}
-
 section {
     height: 800px;
+}
+
+.copyright {
+    
 }
