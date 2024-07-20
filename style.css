@@ -1,11 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: rgb(4, 0, 255);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header, main {
@@ -17,15 +12,19 @@ header, main {
 main {
     background-color: rgb(199, 8, 8); /*cambiar a blanco*/
     color: black;
-    margin-top: 44px;
+    margin-top: 74px;
     margin-right: 30%;
     margin-left: 30%;
+    bottom: 0;
 }
 
 header {
     background-color: #f1f1f1;
     color: #333;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,10 +32,15 @@ header {
     z-index: 1000;
 }
 
+
 header a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 10px 20px;
+}
+
+.index {
+    display: flex;
 }
 
 h2, h3 {
@@ -52,14 +56,23 @@ section {
     position: fixed;
 }
 
-.dark-mode header {
+.dark-mode-header {
     background-color: #333;
     color: #f1f1f1;
 }
 
-.dark-mode main {
+.dark-mode-header a {
+    color: #f1f1f1;
+}
+
+.dark-mode-main {
     background-color: black;
     color: white;
+}
+
+.dark-mode-body {
+    background-color: #121212;
+    color: #f1f1f1;
 }
 
 .dark-mode header a {
@@ -67,24 +80,18 @@ section {
 }
 
 button {
+    background: none;
+    border: none;
+    cursor: pointer;
     padding: 10px 20px;
     font-size: 16px;
-    cursor: pointer;
-    margin: 20px;
 }
 
 button:focus {
     outline: none;
 }
 
-button .fa-sun, button .fa-moon {
-    display: none;
-}
-
-.dark-mode button .fa-sun {
-    display: none;
-}
-
-.dark-mode button .fa-moon {
-    display: inline;
+#toggleIcon {
+    width: 24px;
+    height: 24px;
 }
