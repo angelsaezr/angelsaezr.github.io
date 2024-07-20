@@ -101,4 +101,10 @@ button:focus {
         margin-right: 0;
         width: 100%;
     }
+
+    header {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
 }
