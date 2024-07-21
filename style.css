@@ -1,24 +1,25 @@
 body {
     background-color: white;
-    transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.3s, color 0.5s;
 }
 
 header, main {
-    transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.3s, color 0.5s;
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
 }
 
 main {
-    background-color: rgb(81, 27, 228);
+    background-color: white;
     color: black;
     margin-right: 30%;
     margin-left: 30%;
-    margin-top: 130px;
+    margin-top: 130px;  
 }
 
 header {
-    background-color: red;
+    transition: background-color 0.3s;
+    background-color: transparent;
     color: black;
     display: flex;
     align-items: center;
@@ -30,7 +31,6 @@ header {
     right: 0;
     z-index: 1000;
 }
-
 
 header a {
     color: rgb(0, 0, 0);
@@ -44,10 +44,6 @@ header a {
 
 h2, h3 {
     margin-top: 5%;
-}
-
-section {
-    height: 800px;
 }
 
 .social-icons {
