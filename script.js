@@ -12,11 +12,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
         body.classList.toggle('dark-mode-body');
         
         if (header.classList.contains('dark-mode-header')) {
-            toggleIcon.src = 'images/dark-mode.ico';
-            toggleIcon.alt = 'Modo Claro';
-        } else {
             toggleIcon.src = 'images/light-mode.ico';
+            toggleIcon.alt = 'Modo Claro';
+            toggleIcon.classList.add('invert');
+        } else {
+            toggleIcon.src = 'images/dark-mode.ico';
             toggleIcon.alt = 'Modo Oscuro';
+            toggleIcon.classList.remove('invert');
+        }
+
+        if (body.classList.contains('dark-mode-body')) {
+            github.src = 'images/github.ico';
+            linkedin.src = 'images/linkedin.ico';
+            email.src = 'images/email.ico';
+            github.classList.add('invert');
+            linkedin.classList.add('invert');
+            email.classList.add('invert');
+        } else {
+            github.src = 'images/github.ico';
+            linkedin.src = 'images/linkedin.ico';
+            email.src = 'images/email.ico';
+            github.classList.remove('invert');
+            linkedin.classList.remove('invert');
+            email.classList.remove('invert');
         }
     });
 });

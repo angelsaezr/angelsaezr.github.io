@@ -18,7 +18,6 @@ main {
 }
 
 header {
-    transition: background-color 0.3s;
     background-color: transparent;
     color: black;
     display: flex;
@@ -46,6 +45,21 @@ h2, h3 {
     margin-top: 5%;
 }
 
+h1 {
+    color: rgb(0, 0, 0);
+    
+}
+
+h2 {
+    color: rgb(107, 107, 107);
+    
+}
+
+h3 {
+    color: rgb(148, 147, 147);
+   
+}
+
 .social-icons {
     bottom: 0;
     position: fixed;
@@ -63,6 +77,20 @@ h2, h3 {
 .dark-mode-main {
     background-color: black;
     color: white;
+    h1 {
+        color: white;
+        
+    }
+
+    h2 {
+        color: rgb(156, 156, 156);
+        
+    }
+
+    h3 {
+        color: rgb(110, 110, 110);
+       
+    }
 }
 
 .dark-mode-body {
@@ -70,8 +98,12 @@ h2, h3 {
     color: white;
 }
 
-.dark-mode header a {
+/*.dark-mode header a {
     color: white;
+}*/
+
+.invert {
+    filter: invert(1) brightness(100%);
 }
 
 button {
