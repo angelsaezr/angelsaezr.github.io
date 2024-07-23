@@ -1,10 +1,10 @@
 body {
     background-color: white;
-    transition: background-color 0.3s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 header, main {
-    transition: background-color 0.3s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
 }
@@ -14,7 +14,20 @@ main {
     color: black;
     margin-right: 30%;
     margin-left: 30%;
-    margin-top: 130px;  
+    margin-top: 130px;
+
+    h1 {
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+    }
+    
+    h2 {
+        color: rgb(107, 107, 107);
+    }
+    
+    h3 {
+        color: rgb(148, 147, 147);
+    }
 }
 
 header {
@@ -27,8 +40,8 @@ header {
     height: 20px;
     position: fixed;
     top: 0;
+    left: 0;
     right: 0;
-    z-index: 1000;
 }
 
 header a {
@@ -41,28 +54,8 @@ header a {
     display: flex;
 }
 
-h2, h3 {
-    margin-top: 5%;
-}
-
-h1 {
-    color: rgb(0, 0, 0);
-    
-}
-
-h2 {
-    color: rgb(107, 107, 107);
-    
-}
-
-h3 {
-    color: rgb(148, 147, 147);
-   
-}
-
-.social-icons {
-    bottom: 0;
-    position: fixed;
+footer {
+    text-align: center;
 }
 
 .dark-mode-header {
@@ -79,17 +72,14 @@ h3 {
     color: white;
     h1 {
         color: white;
-        
     }
 
     h2 {
         color: rgb(156, 156, 156);
-        
     }
 
     h3 {
         color: rgb(110, 110, 110);
-       
     }
 }
 
@@ -106,6 +96,13 @@ h3 {
     filter: invert(1) brightness(100%);
 }
 
+section {
+    margin-top: 10%;
+    h1 {
+        font-size: 25px;
+    }
+}
+
 button {
     background: none;
     border: none;
@@ -113,6 +110,8 @@ button {
     padding: 10px 20px;
     font-size: 16px;
 }
+
+
 
 button:focus {
     outline: none;
